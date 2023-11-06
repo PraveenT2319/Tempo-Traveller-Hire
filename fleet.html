@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Tempo Traveller - Inventory</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+	
+	<!-- Library - Google Font Familys -->	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">	
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		.inventroy-box {
+			transition: transform 0.3s;
+		}
+	
+		.inventroy-box:hover {
+			transform: scale(1.1); /* Zoom in the box on hover */
+		}
+	
+		.inventroy-box img {
+			transition: transform 0.3s;
+		}
+	
+		.inventroy-box:hover img {
+			transform: scale(1.1); /* Zoom in the image on hover */
+		}
+	
+		.inventroy-content {
+			transition: transform 0.3s;
+		}
+	
+		.inventroy-box:hover .inventroy-content {
+			transform: scale(1.1); /* Zoom in the content on hover */
+		}
+		.form {
+			background-color: #d81324;
+  display: flex;
+  padding: 20px;
+}
+
+.form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form .form-column-left,
+.form .form-column-right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.form .form-column-left {
+  padding-right: 10px;
+}
+
+.form .form-column-right {
+  padding-left: 10px;
+}
+
+.form label {
+	color: #ffc001;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input[type="submit"] {
+width: 100%;
+  background-color: #007bff;
+  color: #fff;
+ height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.form p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+	</style>
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div><!-- Loader /- -->
+		
+			<!-- Header Section -->
+			<header id="header" class="header-section container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<!-- Top Header -->
+					<div class="top-header container-fluid no-padding">
+						<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+							<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Mail Us</span><b>Info@Tempotravellerinbangalore.Com</b></a>
+							<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Call at</span><b>+91 8073353626</b></a>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" title="Google+"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div><!-- Top Header /- -->		
+					<!-- nav -->
+					<nav class="navbar navbar-default ow-navigation">
+						<div class="navbar-header">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+						</div>
+					
+						<div class="navbar-collapse collapse navbar-right" id="navbar">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html" title="About">Home</a></li>
+								<li><a href="about.html" title="About">About</a></li>
+								<li><a href="fleet.html" title="About">Fleets</a></li>
+								<li><a href="contactus.html" title="About">Contact</a></li>
+								
+								
+	
+							</ul>
+						</div><!--/.nav-collapse -->
+					</nav><!-- nav /- -->
+				
+				</div><!-- Container /- -->		
+			</header><!-- Header Section /- -->
+
+		<main>
+			
+			
+			<!-- Page Banner -->
+			<div class="container-fluid no-padding page-banner">
+				<div class="padding-90"></div>
+				<!-- Container -->
+				<div class="container">
+					<h3>FLEETS</h3>
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">FLEETS</li>
+					</ol>
+				</div><!-- Container /- -->
+				<div class="padding-100"></div>
+			</div><!-- Page Banner /- --> 	
+		
+			<!-- Inventory Section -->
+			<div class="inventroy-section container-fluid no-padding" style="margin-top: 40px;">
+				<!-- Container -->
+				<div class="container">
+					<!-- Section Header -->
+					<div class="section-header">
+						<h5 style="color:#d81324 ; text-align: center;">// OUR SERVICES //</h5>
+						<h1 style="color:#ffc001; ; text-align: center;">Explore Our Fleets</h1>
+					</div><!-- Section Header /- -->
+					<!-- Row -->
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Etios.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Etios</h3>
+								<span>SEAT</span>
+								<span>4 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Innova.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Toyato Crysta / Innova
+								</h3>
+								<span>SEAT</span>
+								<span>7 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/ertiga.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Ertiga</h3>
+								<span>SEAT</span>
+								<span>7 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>9 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>12 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>14 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/mini.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">MINI BUS
+								</h3>
+								<span>SEAT</span>
+								<span>21 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/25 seat.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">25 SEATER BUS
+								</h3>
+								<span>SEAT</span>
+								<span>25 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/50 seat.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">50 SEATER BUS
+								</h3>
+								<span>SEAT</span>
+								<span>50 seater</span><br>
+								
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+
+					</div><!-- Row /- -->
+					
+				
+				</div><!-- Container /- -->
+			</div><!-- Main Section /- -->
+			
+			
+			
+		</main>
+
+
+					<!-- Counter Section -->
+					<div id="counter_section-1" class="container-fluid no-padding counter-section">
+						<div class="padding-70"></div>
+						<!-- Container -->
+						<div class="container" id="service">
+							<div class="row" >
+								<div class="col-md-6">
+									<h3 style="color: #fff;padding:70px;">Depending on Fleets Which suits You
+									</h3>
+									<p style="color: #fff;">
+										ECONOMY - Vehicles with basic Amenities for Budget Travellers<br>
+PREMIUM - Vehicles with Best-in-class Amenities for Superior Passenger<br>
+ROYAL - Ultra Luxury Vehicles with Custom Designed Amenities<br>
+ROYAL VIP - Ultra Luxury Vehicles with Custom Designed Amenities
+									</p></div>
+									<div class="col-md-6">
+										<div class="form-column">
+											<h2 style="color: #fff; text-align: center;"><b>Book Our Fleets</b></h2>
+											<form class="form" action="submit_form.php" method="post">
+												
+											  <div class="form-column-left">
+												<label for="name">Name:</label>
+												<input type="text" id="name" name="name" required>
+										  
+												<label for="phone">Phone Number:</label>
+												<input type="tel" id="phone" name="phone" required>
+										  
+												<label for="passengers">Number of Passengers:</label>
+												<input type="number" id="passengers" name="passengers" required>
+												<label for="time">Time:</label>
+												<input type="time" id="time" name="time" required>
+											  </div>
+										  
+											  <div class="form-column-right">
+												<label for="start">Start Destination:</label>
+												<input type="text" id="start" name="start" required>
+										  
+												<label for="end">End Destination:</label>
+												<input type="text" id="end" name="end" required>
+										  
+												<br><br><label for="date">Date:</label>
+												<input type="date" id="date" name="date" required>
+												<input class="button" type="submit" value="Submit">	
+												
+										 </div>
+										   </div>	</div>
+							</div>
+						</div><!-- Container /- -->
+						<div class="padding-40"></div>
+					</div><!-- Counter Section /- -->
+		
+	<!-- Call To Action -->
+	<div class="cta-section container-fluid no-padding">
+		<div class="padding-50"></div>
+		<!-- Container -->
+		<div class="container">
+			<img src="images/cta-logo.png" alt="Loog" />
+			<h3>have any queries? call us anytime</h3>
+			<a href="#" title="Contact Us">Contact Us</a>
+		</div><!-- Container /- -->
+		<div class="padding-50"></div>
+	</div><!-- Call To Action /- -->
+		
+			<!-- Footer Section -->
+			<footer class="footer-main container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+						<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<!-- Widget Link -->
+							<aside class="widget widget_link">
+								<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+								<h3 class="widget-title">ACCOUNT STATUS</h3>
+								<ul>
+									<li style="color:#909090;">#126/A K.No.396, 10th Cross Near Muneshwara Temple, Bandepalya, Bommanahalli, Bangalore-560068</li>
+									<li><a href="#" title="Order History">+91 8073353626</a></li>
+									<li><a href="#" title="Wishlist">info@tempotravellerinbangalore.com</a></li>
+								</ul>
+							</aside><!-- Widget Link /- -->
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<!-- Widget Link -->
+							<aside class="widget widget_link">
+								<h3 class="widget-title">QUICK LINKS</h3>
+								<ul>
+									<li><a href="index.html" title="Aboutus">Home</a></li>
+									<li><a href="about.html" title="Inventory">About</a></li>
+									<li><a href="fleet.html" title="Services">Fleet</a></li>
+									<li><a href="contactus.html" title="Portfolio">Contact</a></li>
+									<h3 style="color:#909090;">Openning Hours</h3>
+									<li style="color:#909090;">Monday - Sunday:<br>
+										09.00 AM - 10.00 PM</li>
+								</ul>
+							</aside><!-- Widget Link /- -->
+						</div>
+						
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<!-- Widget Link -->
+							<aside class="widget widget_link">
+								<h3 class="widget-title">OUR SUPPORT</h3>
+								<ul>
+									<li><a href="#" title="Contact us">Etios</a></li>
+									<li><a href="#" title="Shipping & Taxes">Toyato Crysta / Innova</a></li>
+									<li><a href="#" title="Return Policy">Ertiga</a></li>
+									<li><a href="#" title="Sitemap">Force Tempo Traveller</a></li>
+									<li><a href="#" title="Terms & Conditions">MINI BUS</a></li>
+									<li><a href="#" title="Terms & Conditions">25 SEATER BUS</a></li>
+									<li><a href="#" title="Terms & Conditions">50 SEATER BUS</a></li>
+								</ul>
+							</aside><!-- Widget Link /- -->
+						</div>
+				
+					</div>
+				</div><!-- Container /- -->
+				
+				<!-- Copyright -->
+				<div class="container-fluid no-padding copyright">
+					<p><i class="fa fa-copyright"></i> COPYRIGHTS 2023. ALL RIGHTS RESERVED</p>
+				</div><!-- Copyright /- -->
+			</footer><!-- Footer Section /- -->
+		
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+</body>
+</html>

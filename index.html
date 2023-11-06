@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Tempo Traveller - Home</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+	
+	<!-- Library - Google Font Familys -->	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+ 
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+	
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+		
+    <![endif]-->
+	<style>.faq-container {
+		
+	  background-color: #fff;
+	  border-radius: 10px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+	}
+	
+	.faq-item {
+	  padding: 20px;
+	  border-bottom: 1px solid #e0e0e0;
+	  cursor: pointer;
+	  transition: background-color 0.3s ease-in-out;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+	
+	.faq-item:last-child {
+	  border-bottom: none;
+	}
+	
+	.faq-question {
+	  font-size: 18px;
+	  font-weight: 700;
+	  padding-bottom: 3px;
+	  patting-top: 3px;
+	}
+	
+	.faq-answer {
+	  font-size: 16px;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.3s ease-in-out;
+
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+	
+	.faq-answer.active {
+	  border-bottom: 1px solid #e0e0e0;
+	}
+	
+	.icon-container i {
+	  font-size: 16px;
+	  cursor: pointer;
+	  transition: transform 0.3s ease-in-out;
+	}
+	
+	.icon-container i.active {
+	  transform: rotate(90deg);
+	}
+
+	input[type=text], select, textarea {
+  align-items: center;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.form{
+	padding: 60px;
+}
+    .inventroy-box {
+        transition: transform 0.3s;
+    }
+
+    .inventroy-box:hover {
+        transform: scale(1.1); /* Zoom in the box on hover */
+    }
+
+    .inventroy-box img {
+        transition: transform 0.3s;
+    }
+
+    .inventroy-box:hover img {
+        transform: scale(1.1); /* Zoom in the image on hover */
+    }
+
+    .inventroy-content {
+        transition: transform 0.3s;
+    }
+
+    .inventroy-box:hover .inventroy-content {
+        transform: scale(1.1); /* Zoom in the content on hover */
+    }
+	
+							.row-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-list li {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+	
+  transition: transform 0.2s;
+}
+
+.row-list li:hover {
+  transform: scale(1.05);
+}
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-media-list li {
+  margin: 5px;
+}
+
+.social-media-list a {
+  text-decoration: none;
+}
+
+	
+
+.social-media-list img:hover {
+  transform: scale(1.2); /* Enlarge the image on hover */
+}
+.container1 {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Auto for the image, 1fr for the heading */
+  align-items: center; /* Vertical alignment */
+}
+
+.container img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.form-container {
+    background: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form form {
+    display: flex; /* Display the form elements in one row */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    justify-content: space-between; /* Add space between the form elements */
+}
+
+.input-container {
+    flex-basis: calc(33.33% - 10px); /* Distribute the elements in a row with a small gap */
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    flex-basis: calc(33.33% - 10px); /* Make the button take up one-third of the row */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0; /* Adjust the padding for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+	</style>
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div><!-- Loader /- -->
+		
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Top Header -->
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Mail Us</span><b>Info@Tempotravellerinbangalore.Com</b></a>
+						<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Call at</span><b>+91 8073353626</b></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google+"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- Top Header /- -->		
+				<!-- nav -->
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+				
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="About">Home</a></li>
+							<li><a href="about.html" title="About">About</a></li>
+							<li><a href="fleet.html" title="About">Fleets</a></li>
+							<li><a href="contactus.html" title="About">Contact</a></li>
+							
+							
+
+						</ul>
+					</div><!--/.nav-collapse -->
+				</nav><!-- nav /- -->
+			
+			</div><!-- Container /- -->		
+		</header><!-- Header Section /- -->
+	
+		<main>
+		
+			<!-- Slider Section -->
+			<div id="home-revslider" class="slider-section container-fluid no-padding ">
+				<!-- START REVOLUTION SLIDER 5.0 -->
+				<div class="rev_slider_wrapper">
+					<div id="home-slider1" class="rev_slider" data-version="5.0">
+						<ul> 
+							<li data-transition="fade" data-slotamount="1"  data-easein="default" data-easeout="default" data-masterspeed="1500"> 
+								<!-- MAIN IMAGE -->
+								<img src="images/car/car1.jpg" alt="home1" /> 
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 text-1" id="slide-1-layer-1" 
+									data-x="['left','left','left','left']" data-hoffset="['365','-730','-730','-730']" 
+									data-y="['top','top','top','top']"  data-voffset="['256','0','0','0']" 
+									data-fontsize="['70','100','120','140']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing: 7px; font-family: 'Roboto Slab', serif; text-transform: uppercase;">
+									<h4>Bangalore's Best Tempo Traveler </h4>
+								</div>
+								
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 text-1" id="slide-1-layer-2" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','20']" 
+									data-y="['top','top','top','top']"  data-voffset="['356','356','356','356']" 
+									data-fontsize="['70','100','120','140']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing: 7px; font-family: 'Roboto Slab', serif; text-transform: uppercase;">
+									<h4>Experience Awaits You</h4>
+								</div>
+								
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-3" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','20']" 
+									data-y="['top','top','top','top']"  data-voffset="['486','486','486','486']" 
+									data-fontsize="['105','105','130','160']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#d81324; font-weight:700; letter-spacing: 2.1px; font-family: 'Open Sans', sans-serif; text-transform: uppercase;">
+									<h3>Luxury Cars</h3>
+								</div>
+								
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 slide-btn" id="slide-1-layer-4" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','365']" 
+									data-y="['top','top','top','top']"  data-voffset="['650','650','650','650']"
+									data-fontsize="['13','100','150','5000']"
+									data-lineheight="['26','52','52','52']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="noraml"
+									data-transform_idle="o:1;"
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1500" 
+									data-splitin="none" 
+									data-splitout="none"							
+									data-responsive_offset="on"							
+									style="z-index:6; position:relative;">
+									<a style="font-weight: 700; padding: 12px 37px;" href="#" title="Purchase">purchase</a>
+									<a style="font-weight: 700; padding: 12px 37px;" href="fleet.html" title="Read More">read more</a>
+								</div>
+							</li>
+							
+							<li data-transition="fade" data-slotamount="1"  data-easein="default" data-easeout="default" data-masterspeed="1500"> 
+								<!-- MAIN IMAGE -->
+								<img src="images/car/car2.jpg" alt="home1" /> 
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 text-1" id="slide-2-layer-1" 
+									data-x="['left','left','left','left']" data-hoffset="['365','-730','-730','-730']" 
+									data-y="['top','top','top','top']"  data-voffset="['256','0','0','0']" 
+									data-fontsize="['70','100','120','140']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing: 7px; font-family: 'Roboto Slab', serif; text-transform: uppercase;">
+									<h3>Adventure Starts Here, </h3>
+								</div>
+								
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 text-1" id="slide-2-layer-2" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','20']" 
+									data-y="['top','top','top','top']"  data-voffset="['356','356','356','356']" 
+									data-fontsize="['70','100','120','140']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#fff; font-weight:400; letter-spacing: 7px; font-family: 'Roboto Slab', serif; text-transform: uppercase;">
+									<h3>Journey in Luxury</h3>
+								</div>
+								
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0" id="slide-2-layer-3" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','20']" 
+									data-y="['top','top','top','top']"  data-voffset="['486','486','486','486']" 
+									data-fontsize="['105','105','130','160']"
+									data-lineheight="['100','100','100','100']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1000" 
+									data-splitin="chars" 
+									data-splitout="none" 
+									data-responsive_offset="on"
+									data-elementdelay="0.05"							
+									style="z-index:6; position:relative; color:#d81324; font-weight:700; letter-spacing: 2.1px; font-family: 'Open Sans', sans-serif; text-transform: uppercase;">
+									<h3>Luxury Cars</h3>
+								</div>
+								
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0 slide-btn" id="slide-2-layer-4" 
+									data-x="['left','left','left','left']" data-hoffset="['365','365','365','365']" 
+									data-y="['top','top','top','top']"  data-voffset="['650','650','650','650']"
+									data-fontsize="['13','100','150','5000']"
+									data-lineheight="['26','52','26','26']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="noraml"
+									data-transform_idle="o:1;"
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+									data-start="1500" 
+									data-splitin="none" 
+									data-splitout="none"							
+									data-responsive_offset="on"							
+									style="z-index:6; position:relative;">
+									<a style="font-weight: 700; padding: 12px 37px;" href="#" title="Purchase">purchase</a>
+									<a style="font-weight: 700; padding: 12px 37px;" href="fleet.html" title="Read More">read more</a>
+								</div>
+							</li>
+						</ul>
+					</div><!-- END REVOLUTION SLIDER -->
+				</div><!-- END OF SLIDER WRAPPER -->
+			</div><!-- Slider Section /- -->
+		
+			
+
+				
+			<!-- Section Header -->
+			<div class="section-header" ><br>
+				<div class="Container">
+						<div class="row">
+							<div class="col-md-6" >
+								<img src="images/car/TMP.png">
+							</div>
+							<div class="col-md-6">
+								<h4 style="color:#d81324 ; text-align: left;">//<b>About us</b>//</h4>
+								<h1 style="color:#ffc001; text-align: left;"><span style="color:#d81324;"><b>Tempo Traveller In Bangalore</span> Your Trusted Partner For Tempo Traveler Rentals!</b></h1>
+					<p style="text-align: left;">Are you planning a group trip, family vacation, or a corporate outing? Look no further! Tempo Traveller in Bangalore is here to provide you with the perfect solution for comfortable and hassle-free travel. We specialize in offering top-notch tempo traveler rental services that cater to all your transportation needs.</p>
+					
+					</p>
+					<p style="text-align: left;">Tempo traveller in bangalore is the Most Preferred Bus Rental Service in Bangalore, Shivmogga. Our Fleet consists of cars, Tempo Traveller, MiniBus & Luxury Bus with Best-in-Class Amenities for Superior Passenger Comfort. We deploy Trained & Experienced Drivers for a Comfortable Ride & Peace of mind. This comes with Affordable Pricing & Hassel Free Booking backed by our Reliable Customer Service at every step of your journey.</p>
+					<a style="background-color: #d81324;" href="about.html" title="Book now">Read More</a>
+				</div></div>
+			</div>
+		</div><!-- Section Header /- -->
+				<!-- Counter Section          -->
+			<div id="counter_section-1" class="container-fluid no-padding counter-section">
+				<div class="padding-70"></div>
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+							<img src="images/counter-3.png" alt="Counter" /> 
+							<h3><span class="count" id="statistics_1_count-1" data-statistics_percent="15">&nbsp;</span></h3>
+							<p>Years Experience</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+							<img src="images/counter-2.png" alt="Counter" /> 
+							<h3><span class="count" id="statistics_1_count-2" data-statistics_percent="20">&nbsp;</span></h3>
+							<p>Expert Drivers</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+							<img src="images/counter-1.png" alt="Counter" />
+							<h3><span class="count" id="statistics_1_count-3" data-statistics_percent="2534">&nbsp;</span></h3>
+							<p>Satisfied Clients</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 counter-box">
+					
+							<img src="images/counter-3.png" alt="Counter" /> 
+							<h3><span class="count" id="statistics_1_count-4" data-statistics_percent="17">&nbsp;</span></h3>
+							<p>Fleets</p>
+						</div>
+					</div>
+				</div><!-- Container /- -->
+				<div class="padding-40"></div>
+			</div><!-- Counter Section /- -->
+					<!-- Section Header -->
+				
+					
+				</div>
+				
+			</div>
+			<!-- Welcome Section /- -->
+		
+			<div class="padding-40"></div>
+			<div class="container why-chooseus-section">
+				
+			<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="choose-box">
+						
+							<div class="container1">
+								<img src="images/car/apply.png" alt="Your Image">
+								<h3 style="color:#ffc001;"><b>ENQUIRY</b></h3>
+							  </div>
+							  <p>Share your Travel Plan with us through Call, Email, Whatsapp, Request a Quote</p>
+
+					</div>
+                     </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="choose-box">
+						
+							<div class="container1">
+								<img src="images/car/select.png" alt="Your Image">
+								<h3 style="color:#ffc001;"><b>SELECT VEHICLE</b></h3>
+							  </div>
+							  <p>Our Team will provide Best Suitable Vehicle Options with Best Value Pricing.</p>
+						
+					</div>
+                     </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="choose-box">
+						
+							<div class="container1">
+								<img src="images/car/book.png" alt="Your Image">
+								<h3 style="color:#ffc001;"><b>BOOK VEHICLE</b></h3>
+							  </div>
+							  <p>Book our Premium & Royal Quality Vehicles on Rent & Enjoy a memorable journey.</p>
+			
+					</div>
+                     </div>
+					
+               </div></div>
+
+			
+	
+			<!-- Inventory Section -->
+			<div class="inventroy-section container-fluid no-padding" style="margin-top: 40px;">
+				<!-- Container -->
+				<div class="container">
+					<!-- Section Header -->
+					<div class="section-header">
+						<h5 style="color:#d81324 ; text-align: center;">// OUR SERVICES //</h5>
+						<h1 style="color:#ffc001; ; text-align: center;">Explore Our Fleets</h1>
+					</div><!-- Section Header /- -->
+					<!-- Row -->
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Etios.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Etios</h3>
+								<span>SEAT</span>
+								<span>4 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Innova.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Toyato Crysta / Innova
+								</h3>
+								<span>SEAT</span>
+								<span>7 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/ertiga.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Ertiga</h3>
+								<span>SEAT</span>
+								<span>7 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>9 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>12 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/Travellor.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">Force Tempo Traveller
+								</h3>
+								<span>SEAT</span>
+								<span>14 + 1 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/mini.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">MINI BUS
+								</h3>
+								<span>SEAT</span>
+								<span>21 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/25 seat.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">25 SEATER BUS
+								</h3>
+								<span>SEAT</span>
+								<span>25 seater</span><br>
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+							<img src="images/car/50 seat.jpg" alt="Inventory" />
+							<div class="inventroy-content">
+								<h3  style="color: #ffc001;">50 SEATER BUS
+								</h3>
+								<span>SEAT</span>
+								<span>50 seater</span><br>
+								
+								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
+								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
+							</div>
+						</div>
+
+					</div><!-- Row /- -->
+					
+				
+				</div><!-- Container /- -->
+			</div><!-- Main Section /- -->
+			
+			<div class="padding-20"></div>
+		
+		
+		</main>
+		
+			   
+		<div class="container why-chooseus-section">
+			<div class="row">
+				<h5 style="color:#d81324 ; text-align: center;"><b>//MOST LIKED & HIGH RATED//</b>
+					</h5>
+					<h1 style="color:#ffc001; ; text-align: center;"><b>BUS RENTAL SERVICE in India</b></h1><br>
+				  <ul class="social-media-list">
+								<li><a href="#"><img src="images/car/google.png" alt="google" style="width:250px; height: 76px;"></a>
+								<p><b>4.7 ★ ★ ★ ★</b><br>
+									3000+ Reviews</p></li>
+								<li><a href="#"><img src="images/car/facebook.png" alt="Facebook" style="width:250px; height: 76px;"></a>
+								<p><b>1000+</b><br>
+									Page Likes & Followers</p></li>
+							
+								<li><a href="#"><img src="images/car/INSTA.png" alt="Instagram" style="width:250px; height: 76px;"></a>
+								<p><b>1000+</b><br>
+									Page Likes & Followers</p></li>
+								<li><a href="#"><img src="images/car/youtube.png" alt="youtube" style="width:250px; height: 76px;"></a>
+								<p><b>1000+</b><br>
+									Page Likes & Followers</p></li>
+							  </ul>
+					
+				
+					
+			   </div></div>
+			   <div class="padding-40"></div>
+		<div class="faq container">
+			<div class="row"><div class="section-header">
+				<h3 style="color: #ffc001;">Frequently Asked Questions</h3>
+			</div>
+				<div class="col-sm-6">
+			<div class="faq-item">
+				<div class="faq-question">How to book a Bus with Urban Tempo Traveller in Bangalore?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>1- Our Travel Advisors will ask few details regarding your Trip to understand your Travel Requirement in detail.</p>
+				<P>2- Most Appropriate Vehicle is suggested for your Trip & Rate Quotation is provided to you.</P>
+				<P>3- Once you agree with Rate Quotation & decide to provide us an opportunity to serve you, a small booking amount is taken to confirm the booking.</P>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">Your Services Are Available In Which Cities?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>We are currently operational in 5 Cities of India- Bangalore, Shivmogga, Mysore, Coimbatore, Kochin. Very soon we will be adding more cities to our services.</p>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">How Are The Kilometers Calculated?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>The ‘Kilometres’ are calculated from the Vehicle Garage to Garage basis i.e. Vehicle Garage -> Pickup Point -> Your Dstinations -> Your Drop Point – > Vehicle Garage.</p>
+				<p>We advise you to check the Kilometers before start of the Trip & at the end of the Trip for your satisfaction.
+				</p>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What Are The Payment Terms?<br><br></div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>You can confirm your booking reservation by paying a small booking fee.</p>
+				<p>The balance amount to be paid before the start of the journey at the time of boarding the vehicle.</p>
+			</div>
+
+			
+		</div>
+		<div class="col-sm-6">
+			<div class="faq-item">
+				<div class="faq-question">What About The Toll, State Taxes / Entry Fees & Parking Charges?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>Its advisable to pay Toll, Parking, State Taxes / Entry Fees directly by you to the Authorities during the Trip.</p>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What If I Am Carrying More Luggage?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>You need to specify the accurate no. of Luggage Bags with approx.. size (medium/Large)</p>
+				<p>Based on details provided by you, a vehicle with Luggage Carrier on Roof will be provided to you.</p>
+				<p>If that is also not sufficient, then you can ask for a Larger Capacity vehicle to accommodate more Luggage</p>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What Happens If The Vehicle Breaks Down?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>Since we work with the best operators, the vehicles are usually reliable.</p>
+				<p>In case of minor issue, Operator gets it rectified till you enjoy your trip. However, if required, operator will change the vehicle (if possible).</p>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">How To Get In Touch With You, If I Have Additional Questions?</div>
+				<div class="icon-container"><i class="fa fa-chevron-right"></i></div>
+			</div>
+			<div class="faq-answer">
+				<p>You can call or drop a message on number +918073353626
+					OR write to us at booking@tempotravellerinbangalore.com One of our customer service executives will reach out to you.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+			
+		
+	<div class="container" style="text-align: center;margin-top: 40px;">
+		<div class="section-header"  style="align-items: center;">
+			<h3 style="color:#ffc001;"><b>VEHICLES & SERVICES</b><br>AVAILABLE IN BELOW CITIES</h3>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="images/car/CMB.jpg" alt="Inventory">
+				</div>
+				<div class="col-md-2">
+					<img src="images/car/BNG.jpg" alt="Inventory">
+				</div>
+				<div class="col-md-2">
+					<img src="images/car/KOCHI.jpg" alt="Inventory" >
+				</div>
+				<div class="col-md-2">
+					<img src="images/car/SHVMGA.jpg" alt="Inventory">
+				</div>
+				<div class="col-md-2">
+					<img src="images/car/MYS.jpg" alt="Inventory">
+				</div>
+				<div class="col-md-2">
+					<img src="images/car/CMB.jpg" alt="Inventory"> m 	
+				</div>
+			</div>
+		</div>
+	
+
+	
+	</div>	
+		<!-- Call To Action -->
+		<div class="cta-section container-fluid no-padding" style="margin-top: 40px;">
+			<div class="padding-50"></div>
+			<!-- Container -->
+			<div class="container">
+				<img src="images/cta-logo.png" alt="Loog" />
+				<h3>have any queries? call us anytime</h3>
+				<a href="#" title="Contact Us">Contact Us</a>
+			</div><!-- Container /- -->
+			<div class="padding-50"></div>
+		</div><!-- Call To Action /- -->
+		<div class="floating-icons">
+			<a href="#" class="fa fa-facebook"></a><br>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<a href="#" class="fa fa-twitter"></a>
+		  </div>
+		 
+		<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+							<h3 class="widget-title">ACCOUNT STATUS</h3>
+							<ul>
+								<li style="color:#909090;">#126/A K.No.396, 10th Cross Near Muneshwara Temple, Bandepalya, Bommanahalli, Bangalore-560068</li>
+								<li><a href="#" title="Order History">+91 8073353626</a></li>
+								<li><a href="#" title="Wishlist">info@tempotravellerinbangalore.com</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">QUICK LINKS</h3>
+							<ul>
+								<li><a href="index.html" title="Aboutus">Home</a></li>
+								<li><a href="about.html" title="Inventory">About</a></li>
+								<li><a href="fleet.html" title="Services">Fleet</a></li>
+								<li><a href="contactus.html" title="Portfolio">Contact</a></li>
+								<h3 style="color:#909090;">Openning Hours</h3>
+								<li style="color:#909090;">Monday - Sunday:<br>
+									09.00 AM - 10.00 PM</li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">OUR SUPPORT</h3>
+							<ul>
+								<li><a href="#" title="Contact us">Etios</a></li>
+								<li><a href="#" title="Shipping & Taxes">Toyato Crysta / Innova</a></li>
+								<li><a href="#" title="Return Policy">Ertiga</a></li>
+								<li><a href="#" title="Sitemap">Force Tempo Traveller</a></li>
+								<li><a href="#" title="Terms & Conditions">MINI BUS</a></li>
+								<li><a href="#" title="Terms & Conditions">25 SEATER BUS</a></li>
+								<li><a href="#" title="Terms & Conditions">50 SEATER BUS</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+			
+				</div>
+			</div><!-- Container /- -->
+			
+			<!-- Copyright -->
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> COPYRIGHTS 2023. ALL RIGHTS RESERVED</p>
+			</div><!-- Copyright /- -->
+		</footer><!-- Footer Section /- -->
+		
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script>
+	<script src="libraries/lightslider/lightslider.min.js"></script>
+	
+	<!-- RS5.0 Core JS Files -->
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+	<script>const faqItems = document.querySelectorAll('.faq-item');
+
+		faqItems.forEach(item => {
+		  const question = item.querySelector('.faq-question');
+		  const answer = item.nextElementSibling;
+		  const icon = item.querySelector('i');
+		
+		  item.addEventListener('click', () => {
+			faqItems.forEach(otherItem => {
+			  if (otherItem !== item) {
+				const otherAnswer = otherItem.nextElementSibling;
+				const otherIcon = otherItem.querySelector('i');
+		
+				otherAnswer.classList.remove('active');
+				otherIcon.classList.remove('active');
+				otherAnswer.style.maxHeight = "0";
+			  }
+			});
+		
+			answer.classList.toggle('active');
+			icon.classList.toggle('active');
+			if (answer.classList.contains('active')) {
+			  answer.style.maxHeight = answer.scrollHeight + "px";
+			} else {
+			  answer.style.maxHeight = "0";
+			}
+		  });
+		});</script>
+</body>
+</html>
