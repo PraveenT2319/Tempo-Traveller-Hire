@@ -623,7 +623,7 @@ a {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:70px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
@@ -1048,4 +1048,202 @@ height: auto;
 }
 .fb{
 width: 100%;
+}
+.faq-container {
+		
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .faq-item {
+	padding: 20px;
+	border-bottom: 1px solid #e0e0e0;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .faq-item:last-child {
+	border-bottom: none;
+  }
+  
+  .faq-question {
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 3px;
+	patting-top: 3px;
+  }
+  
+  .faq-answer {
+	font-size: 16px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  
+  .faq-answer.active {
+	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .icon-container i {
+	font-size: 16px;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon-container i.active {
+	transform: rotate(90deg);
+  }
+
+  input[type=text], select, textarea {
+align-items: center;
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.form{
+  padding: 60px;
+}
+  .inventroy-box {
+	  transition: transform 0.3s;
+  }
+
+  .inventroy-box:hover {
+	  transform: scale(1.1); /* Zoom in the box on hover */
+  }
+
+  .inventroy-box img {
+	  transition: transform 0.3s;
+  }
+
+  .inventroy-box:hover img {
+	  transform: scale(1.1); /* Zoom in the image on hover */
+  }
+
+  .inventroy-content {
+	  transition: transform 0.3s;
+  }
+
+  .inventroy-box:hover .inventroy-content {
+	  transform: scale(1.1); /* Zoom in the content on hover */
+  }
+  
+						  .row-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.row-list li {
+padding: 15px;
+border-radius: 10px;
+margin: 5px;
+font-weight: bold;
+text-align: center;
+  
+transition: transform 0.2s;
+}
+
+.row-list li:hover {
+transform: scale(1.05);
+}
+.social-media-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.social-media-list li {
+margin: 5px;
+}
+
+.social-media-list a {
+text-decoration: none;
+}
+
+  
+
+.social-media-list img:hover {
+transform: scale(1.2); /* Enlarge the image on hover */
+}
+.container1 {
+display: grid;
+grid-template-columns: auto 1fr; /* Auto for the image, 1fr for the heading */
+align-items: center; /* Vertical alignment */
+}
+
+.container img {
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
+}
+.form-container {
+  background: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form form {
+  display: flex; /* Display the form elements in one row */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  justify-content: space-between; /* Add space between the form elements */
+}
+
+.input-container {
+  flex-basis: calc(33.33% - 10px); /* Distribute the elements in a row with a small gap */
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  flex-basis: calc(33.33% - 10px); /* Make the button take up one-third of the row */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0; /* Adjust the padding for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

@@ -129,7 +129,28 @@ width: 100%;
   margin-top: 20px;
 }
 
-	</style>
+.grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }</style>
+	
 	
 </head>
 
@@ -220,187 +241,64 @@ width: 100%;
 				<div class="padding-90"></div>
 				<!-- Container -->
 				<div class="container">
-					<h3>FLEETS</h3>
+					<h3>Gallery</h3>
 					<ol class="breadcrumb">
 						<li><a href="index.html">Home</a></li>
-						<li class="active">FLEETS</li>
+						<li class="active">Gallery</li>
 					</ol>
 				</div><!-- Container /- -->
 				<div class="padding-100"></div>
 			</div><!-- Page Banner /- --> 	
 		
-			<!-- Inventory Section -->
-			<div class="inventroy-section container-fluid no-padding" style="margin-top: 40px;">
-				<!-- Container -->
-				<div class="container">
-					<!-- Section Header -->
-					<div class="section-header">
-						<h5 style="color:#d81324 ; text-align: center;">// OUR SERVICES //</h5>
-						<h1 style="color:#ffc001; ; text-align: center;">Explore Our Fleets</h1>
-					</div><!-- Section Header /- -->
-					<!-- Row -->
-					<div class="row">
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/Etios.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Etios</h3>
-								<span>SEAT</span>
-								<span>4 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/Innova.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Toyato Crysta / Innova
-								</h3>
-								<span>SEAT</span>
-								<span>7 + 1 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/ertiga.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Ertiga</h3>
-								<span>SEAT</span>
-								<span>7 + 1 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/Travellor.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Force Tempo Traveller
-								</h3>
-								<span>SEAT</span>
-								<span>9 + 1 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/Travellor.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Force Tempo Traveller
-								</h3>
-								<span>SEAT</span>
-								<span>12 + 1 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/Travellor.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">Force Tempo Traveller
-								</h3>
-								<span>SEAT</span>
-								<span>14 + 1 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/mini.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">MINI BUS
-								</h3>
-								<span>SEAT</span>
-								<span>21 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/25 seat.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">25 SEATER BUS
-								</h3>
-								<span>SEAT</span>
-								<span>25 seater</span><br>
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
-							<img src="images/car/50 seat.jpg" alt="Inventory" />
-							<div class="inventroy-content">
-								<h3  style="color: #ffc001;">50 SEATER BUS
-								</h3>
-								<span>SEAT</span>
-								<span>50 seater</span><br>
-								
-								<a style="background-color: #d81324;" href="#" title="Book now">book now</a>
-								<a style="background-color: #ffc001;" href="fleet.html#service" title="Book now">Read More</a>
-							</div>
-						</div>
-
-					</div><!-- Row /- -->
-					
-				
-				</div><!-- Container /- -->
-			</div><!-- Main Section /- -->
 			
 			
 			
 		</main>
+        
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+      
 
+        <div class="grid-gallery">
+            <div class="gallery-item">
+                <img src="images/car/1.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/9.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/3.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/4.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/5.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/6.jpg" alt="">
+            </div>
 
-					<!-- Counter Section -->
-					<div id="counter_section-1" class="container-fluid no-padding counter-section">
-						<div class="padding-70"></div>
-						<!-- Container -->
-						<div class="container" id="service">
-							<div class="row" >
-								<div class="col-md-6">
-									<h3 style="color: #fff;padding:70px;">
-									</h3>
-									<p style="color: #fff; font-size: 30px; color: #ffc001;">Depending on Fleets Which suits You</p>
-									<p style="color: #fff;">
-										ECONOMY - Vehicles with basic Amenities for Budget Travellers<br>
-PREMIUM - Vehicles with Best-in-class Amenities for Superior Passenger<br>
-ROYAL - Ultra Luxury Vehicles with Custom Designed Amenities<br>
-ROYAL VIP - Ultra Luxury Vehicles with Custom Designed Amenities
-									</p></div>
-									<div class="col-md-6">
-										<div class="form-column">
-											<h2 style="color: #fff; text-align: center;"><b>Book Our Fleets</b></h2>
-											<form class="form" action="submit_form.php" method="post">
-												
-											  <div class="form-column-left">
-												<label for="name">Name:</label>
-												<input type="text" id="name" name="name" required>
-										  
-												<label for="phone">Phone Number:</label>
-												<input type="tel" id="phone" name="phone" required>
-										  
-												<label for="passengers">Number of Passengers:</label>
-												<input type="number" id="passengers" name="passengers" required>
-												<label for="time">Time:</label>
-												<input type="time" id="time" name="time" required>
-											  </div>
-										  
-											  <div class="form-column-right">
-												<label for="start">Start Destination:</label>
-												<input type="text" id="start" name="start" required>
-										  
-												<label for="end">End Destination:</label>
-												<input type="text" id="end" name="end" required>
-										  
-												<br><br><label for="date">Date:</label>
-												<input type="date" id="date" name="date" required>
-												<input class="button" type="submit" value="Submit">	
-												
-										 </div>
-										   </div>	</div>
-							</div>
-						</div><!-- Container /- -->
-						<div class="padding-40"></div>
-					</div><!-- Counter Section /- -->
+            <div class="gallery-item">
+                <img src="images/car/7.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/8.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/2.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/10.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="images/car/11.jpg" alt="">
+            </div>
+        </div>
+   </div>
+</div>
+
+			
 		
 	<!-- Call To Action -->
 	<div class="cta-section container-fluid no-padding">
@@ -443,7 +341,7 @@ ROYAL VIP - Ultra Luxury Vehicles with Custom Designed Amenities
 									<li><a href="index.html" title="Aboutus">Home</a></li>
 									<li><a href="about.html" title="Inventory">About</a></li>
 									<li><a href="fleet.html" title="Services">Fleet</a></li>
-									<li><a href="gallery.html" title="Services">Gallery</a></li>
+                                    <li><a href="gallery.html" title="Services">Gallery</a></li>
 									<li><a href="contactus.html" title="Portfolio">Contact</a></li>
 									<h3 style="color:#909090;">Openning Hours</h3>
 									<li style="color:#909090;">Monday - Sunday:<br>
