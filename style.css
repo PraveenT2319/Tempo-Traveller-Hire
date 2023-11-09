@@ -556,6 +556,7 @@ a {
 	.top-header .top-icons > a {
 		padding: 17px;
 		margin-right: 0;
+		display: none;
 	}
 	.top-header  .top-icons > a span,
 	.top-header  .top-icons > a b {
@@ -959,7 +960,7 @@ html .header.fixed div {
     bottom: 0 !important;
     left: 0 !important;
     z-index: 100000000000000000 !important;
-    display:none;
+    display: block !important;
 }}
 
 .chat-icon {
